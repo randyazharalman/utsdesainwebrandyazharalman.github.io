@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/dataTables.bootstrap5.min.css">
+  <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <!-- Jquery DataTables -->
+  <script type="text/javascript" language="javascript"
+    src="http:////cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+  <!-- Bootstrap dataTables Javascript -->
+  <script type="text/javascript" language="javascript"
+    src="http://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script>  
+</head>
+
+<body>
+  <!-- HEADER  -->
+  <div class="top-header sticky-top bg-light " id="top">
+    <div class="container sticky-top">
+      <header class="d-flex  flex-wrap justify-content-center py-3 sticky-top">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <!-- <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg> -->
+          <img class="bi me-2" src="img/LO.png" width="200" height="50" alt="">
+          <!-- <span class="fs-4">Pendidikan Teknologi Informasi</span> -->
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item " id="btndropdown"><a href="index.html" class="nav-link px-2"
+              aria-current="page">Beranda</a></li>
+          <li class="nav-item dropdown" id="btndropdown">
+            <a class="nav-link " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu dropdown-menu-macos mx-0 shadow" id="dropdownmenu"
+              aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="deskripsi.html">Deskripsi Program Studi</a></li>
+              <li><a class="dropdown-item" href="prospek.html">Prospek Kerja</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="visimisi.html">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="btndropdown">
+            <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Fasillitas
+            </a>
+            <ul class="dropdown-menu" id="dropdown" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="elearning.html">E-Learning</a></li>
+              <li><a class="dropdown-item" href="siakad.html">Siakad</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="laboratorium.html">Laboratorium</a></li>
+              <li><a class="dropdown-item" href="fasilitas_lainnya.html">Fasilitas Lainnya</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="btndropdown">
+            <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Akademik
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+              <li><a class="dropdown-item" href="krs.html">KRS Online</a></li>
+              <li><a class="dropdown-item" href="kalender.html">Kalender Akademik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </div>
+  </div>
+  <!-- END HEADER  -->
+
+  <!-- MAIN  -->
+  <div class="container col-xxl-10 px-6 py-5 mt-1 mb-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 mt-1 py-5 border shadow-lg">
+      <div class="col-10 col-sm-8 col-lg-6 ">
+        <img src="img/undraw_books_re_8gea.svg" class=" mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
+          height="300" loading="lazy">
+      </div>
+      <div class="col-lg-6 text-center">
+        <h2 class="display-5 fw-bold lh-1 mb-3 text-center mt-0">Kurikulum</h2>
+        <hr class="divider">
+        <div class="accordion-body text-muted fs-5 text-lg-start">
+          Program Studi Pendidikan Teknologi Informasi sampai saat ini telah memiliki dua kurikulum. Kurikulum pertama
+          berlaku semenjak tahun 2015. Kemudian setelah dilakukan peninjauan ada perubahan menjadi kurikulum 2017.
+        </div>
+        <button class="btn btn-outline-primary btn-lg bi me-2" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">Lihat Kurikulum</button>
+        <a href="berkas/Kurikulum PTI  2017 (pasca peninjauan).pdf" class="btn btn-outline-primary btn-lg" role="button"
+          download>Download Kurikulum</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- END MAIN  -->
+  <!-- MODAL KURIKULUM  -->
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="staticBackdropLabel">Kurikulum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped table-bordered table-paginate" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Mata Kuliah</th>
+                    <th>Jumlah SKS</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+     
+            <tfoot>
+                <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Mata Kuliah</th>
+                    <th>Jumlah SKS</th>
+                    <th>Semester</th>
+                </tr>
+            </tfoot>
+     
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>MKWU00101</td>
+                    <td>Pendidikan Agama Islam (AIK 1)</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>WF024101</td>
+                    <td>Landasan Pendidikan</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>WU00102</td>
+                    <td>Pancasila</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>WP024101</td>
+                    <td>Matematika Dasar</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>WP024108</td>
+                    <td>Fisika Umum</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>WP024109</td>
+                    <td>Pengantar TIK</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>WF024108</td>
+                    <td>Filsafat Pendidikan</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>WU00103</td>
+                    <td>Pendidikan Bahasa Indonesia</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>WP024110</td>
+                    <td>Organisasi Komputer</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>WF024202</td>
+                    <td>Psikologi Pendidikan</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>WI00201</td>
+                    <td>Ibadah, Akhlak dan Muamalat AIK 3</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>WP024213</td>
+                    <td>Algoritma dan Pemrograman 1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>WP024533</td>
+                    <td>Belajar dan Pembelajaran TIK</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>WF024207</td>
+                    <td>Penjaskes</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>WF024209</td>
+                    <td>Pedagogik</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>WU02118</td>
+                    <td>Anti Korupsi</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>WP024211</td>
+                    <td>Sistem Operasi</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>WI00209</td>
+                    <td>ISBD</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>WU00203</td>
+                    <td>Pendidikan Kewarganegaraan</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>WP024202</td>
+                    <td>Kalkulus Dasar</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>WF024405</td>
+                    <td>Pengelolaan Pendidikan</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>WI00302 </td>
+                    <td>Kemuhammadiyahan AIK 2</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>WP024312</td>
+                    <td>Arsitektur Komputer</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>WP024315</td>
+                    <td>Struktur Data</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>WP024314</td>
+                    <td>Algoritma dan Pemrograman Lanjut</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>WF024611</td>
+                    <td>Evaluasi Pendidikan</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>WF024503</td>
+                    <td>Landasan BK</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>WP024303</td>
+                    <td>Kalkulus Lanjutan</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>WP024316</td>
+                    <td>Basis Data</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>WF024312</td>
+                    <td>Pendidikan Inklusi</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL  -->
+  <!-- FOOTER  -->
+  <div class="container-fluid bg-light mb-0 justify-content-center">
+    <footer class="py-5 px-5 justify-content-center">
+      <div class="row" id="footer">
+        <div class="col-6 col-md-4 mb-3 ">
+          <h5 class="fw-bold">Our Social Media</h5>
+          <hr class="dropdown-divider mb-4">
+          <ul class="nav flex-column">
+            <li class="nav-item" id="icon"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fa-brands fa-instagram fa-2x"></i> ptiumtas</a></li>
+            <hr class="divider">
+            <li class="nav-item" id="icon"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fa-brands fa-twitter fa-2x"></i>@ptiumtas</a></li>
+            <hr class="divider">
+            <li class="nav-item " id="icon"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fa-brands fa-facebook fa-2x"></i> Pendidikan Teknologi Informasi UMTAS</a></li>
+            <hr class="divider">
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-2">
+          <form>
+            <h5 class="fw-bold">Our Contact</h5>
+            <hr class="dropdown-divider mb-4">
+            <p class="text-muted"><i class="fa-solid fa-phone"></i> (0265) 2350982</p>
+            <p class="text-muted"><i class="fa-solid fa-envelope "></i> pti@umtas.ac.id</p>
+            <p class="text-muted"><i class="fa-solid fa-location-dot"></i> Tasikmalaya, Jawa Barat</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <!-- <input id="newsletter1" type="text" class="form-control" placeholder="Email address"> -->
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 150px"></textarea>
+            </div>
+            <button class="btn btn-primary mt-2" type="button">Kirim</button>
+          </form>
+        </div>
+      </div>
+  </div>
+
+  <div class="d-flex  flex-sm-row justify-content-center py-0 my-4 border-top mt-0">
+    <p class="mt-4">&copy; 2022 PTI Umtas, Inc. All rights reserved.</p>
+  </div>
+  </footer>
+  </div>
+  <!-- END FOOTER  -->
+</body>
+<!-- Panggil Fungsi -->
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+$('.table-paginate').DataTable();
+} );
+</script>
+
+</html>

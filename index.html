@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS DESAIN WEB RANDY AZHAR ALMAN F</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- HEADER  -->
+  <div class="top-header sticky-top bg-light " id="top">
+    <div class="container sticky-top">
+      <header class="d-flex  flex-wrap justify-content-center py-3 sticky-top">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <!-- <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg> -->
+          <img class="bi me-2" src="img/LO.png" width="200" height="50" alt="">
+          <!-- <span class="fs-4">Pendidikan Teknologi Informasi</span> -->
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item " id="btndropdown"><a href="#" class="nav-link px-2" aria-current="page">Beranda</a></li>
+          <li class="nav-item dropdown" id="btndropdown">
+            <a class="nav-link " href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu dropdown-menu-macos mx-0 shadow"id="dropdownmenu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="deskripsi.html">Deskripsi Program Studi</a></li>
+              <li><a class="dropdown-item" href="prospek.html">Prospek Kerja</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="visimisi.html">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="btndropdown">
+            <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Fasillitas
+            </a>
+            <ul class="dropdown-menu" id="dropdown" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="elearning.html">E-Learning</a></li>
+              <li><a class="dropdown-item" href="siakad.html">Siakad</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="laboratorium.html">Laboratorium</a></li>
+              <li><a class="dropdown-item" href="fasilitas_lainnya.html">Fasilitas Lainnya</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="btndropdown">
+            <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Akademik
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+              <li><a class="dropdown-item" href="krs.html">KRS Online</a></li>
+              <!-- <hr class="dropdown-divider"> -->
+              <li><a class="dropdown-item" href="kalender.html">Kalender Akademik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </div>
+  </div>
+  <!-- END HEADER  -->
+  <!-- BODY  -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item bg-dark active">
+        <img src="img/umts.jpg" class="d-block w-100" id="img" alt="...">
+        <div class="carousel-caption d-none d-md-block auto">
+          <h1 id="" class="fw-bold mx-auto">Penerimaan Mahasiswa Baru PTI UMTAS Tahun Akademik 2022/2023</h1>
+          <p>Program Studi Pendidikan Teknologi Informasi Membuka Penerimaan Mahasiswa Baru Tahun Akademik 2022/2023.
+          </p>
+          <a href="https://pmb.umtas.ac.id/" role="button" class="btn btn-outline-light">Selengkapnya</a>
+          <!-- <button class="btn btn-outline-light">Selengkapnya</button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/5.jpg" class="d-block w-100" id="img" alt="...">
+        <div class="carousel-caption d-none d-md-block auto">
+          <h1 id="" class="fw-bold mx-auto">Prospek Kerja Lulusan Pendidikan Teknologi Informasi</h1>
+          <p>Selain Menjadi Guru yang Mengajar di Bidang Teknologi Informasi, Lulusan Program Studi Pendidikan Teknologi
+            Informasi UMTAS terdapat banyak Prospek Kerja yang Relevan dengan Zaman.</p>
+          <a href="https://campus.quipper.com/majors/id-teknologi-informasi" role="button" class="btn btn-outline-light">Selengkapnya</a>
+          <!-- <button class="btn btn-outline-light">Selengkapnya</button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/6.jpg" class="d-block w-100" id="img" alt="...">
+        <div class="carousel-caption d-none d-md-block auto">
+          <h1 id="" class="fw-bold mx-auto">Program Pertukaran Mahasiswa Kampus Merdeka</h1>
+          <p>Program Kampus Merdeka Pertukaran Mahasiswa Telah dibuka Kembali Bagi Mahasiswa Pendidikan Teknologi Informasi.
+          </p>
+          <a href="https://kampusmerdeka.kemdikbud.go.id/web/pertukaranMahasiswaMerdeka2021" role="button" class="btn btn-outline-light">Selengkapnya</a>
+          <!-- <button class="btn btn-outline-light">Selengkapnya</button> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+  <section class="py-5 text-center  container-fluid ">
+    <div class="row py-lg-0">
+      <div class="col-lg-6 col-md-8 mx-auto ">
+        <h2 class="fw-bold">BIDANG KONSENTRASI</h2>
+        <hr class="divider">
+        <p class="lead text-muted">Konsentrasi memungkinkan peserta didik untuk mengembangkan minat dan bakatnya. Kami
+          menyadari bahwa masing-masing Individu memiliki minat yang berbeda antara satu dengan lainnya, oleh karena itu
+          di PTI mahasiswa akan diarahkan untuk mengembangkan minatnya.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-0 mb-5">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/softwareeng.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+            <!-- <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/img" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img> -->
+            <div class="card-body">
+              <h5 class="fw-bold mb-3 text-center">Software Engineering</h5>
+              <p class="card-text">Internet dan segala macam teknologi yang saling berkaitan didalamnya merupakan bagian dari Teknologi Informasi yang terus berkembang.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group d-grid gap-2 d-md-flex justify-content-md-center">
+                  <button type="button" class="btn btn-sm btn-outline-primary " data-bs-toggle="modal"
+                    data-bs-target="#softwareeng">Selengkapnya</button>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <!-- <small class="text-muted">9 mins</small> -->
+                <small class="text-muted">1 tahun yang lalu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/4.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/5.avif" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+            <div class="card-body">
+              <h5 class="fw-bold mb-3 text-center">Multimedia & Games</h5>
+              <p class="card-text">Tenaga Ahli yang handal dibidang Desain Grafis dan juga multimedia semakin dibutuhkan saat ini.Banyak bidang pekerjaan yang bisa dilakukan jika kita mahir dalam Desain Grafis. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                    data-bs-target="#games">Selengkapnya</button>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <small class="text-muted">1 tahun yang lalu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/bussines.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <h5 class="fw-bold mb-3 text-center">Bussines Information System</h5>
+              <p class="card-text">Menjawab kebutuhan bisnis yang terus berkembang, kami di Program Studi Pendidikan Teknologi Informasi membuka Konsentrasi Komputerisasi Akuntansi.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                    data-bs-target="#bussines">Selengkapnya</button>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <small class="text-muted">1 tahun yang lalu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div> -->
+  </div>
+  </div>
+  <!-- END BODY  -->
+
+  <!-- MODAL  -->
+  <!-- Modal -->
+  <div class="modal fade" id="softwareeng" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">Software Engineering</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-between">
+          <div class="card shadow-sm">
+            <img src="img/softwareeng.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="325">
+          </div>
+
+          <p class="justify-content-end mt-3 ">
+            Internet dan segala macam teknologi yang saling berkaitan didalamnya merupakan bagian dari Teknologi
+            Informasi yang terus berkembang dan banyak digunakan setiap harinya. Pada era digital seperti saat ini,
+            Internet merupakan bagian terpenting dari kehidupan manusia modern. Hal tersebut bisa dilihat dari
+            lingkungan disekitar kita yang setiap hari tidak bisa lepas dari Internet mulai dari bangun tidur hingga
+            tidur lagi.
+          <p>Hal terebut membuat kebutuhan akan orang-orang yang memiliki keahlian dibidang pemrograman internet dan
+            juga hal penyertanya lainnya seperti ahli dalam bidang pemrograman android, dan iOS menjadi semakin terbuka
+            luas. Ini merupakan potensi besar bagi Mahasiswa Program Studi Pendidikan Teknologi Informasi.
+          </p>
+          <p>Konsentrasi Pemrograman Internet merupakan konsentrasi yang layak Anda pilih jika Anda ingin menjadi
+            programmer. Pada dasarnya, selain bisa membuat aplikasi berbasis web Anda juga akan diajarkan bagaimana cara
+            membuat aplikasi pada perangangkat lain seperti misalnya aplikasi untuk Android, iOS, dan juga aplikasi
+            untuk Desktop.
+          </p>
+          <p>Outcome atau prospek lulusan dari penjurusan Pemrograman Internet ini adalah menjadi Programmer,
+            Technopreneur, Systems Analyst, dan tentu saja Anda juga bisa menjadi Guru untuk SMK jurusan Rekayasa
+            Perangkat Lunak.
+          </p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal games  -->
+  <div class="modal fade" id="games" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">Multimedia & Games</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-between">
+          <div class="card shadow-sm">
+            <img src="img/4.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="325">
+          </div>
+
+          <p class="justify-content-end mt-3 ">
+            Tenaga Ahli yang handal dibidang Desain Grafis dan juga multimedia semakin dibutuhkan saat ini. Banyak
+            bidang pekerjaan yang bisa dilakukan jika kita mahir dalam Desain Grafis. Misalnya saja adalah menjadi
+            Desainer untuk kemasan produk, desain poster, desain brosur hingga ke desain antarmuka perangkat lunak atau
+            website.
+          <p>Seiring dengan banyaknya kebutuhan tenaga ahli, maka kami di Program Studi Pendidikan Teknologi Informasi
+            menyediakan Bidang Konsentrasi Multimedia.</p>
+
+          <p>Konsentrasi ini dirancang untuk mereka yang memiliki jiwa kreatif, dan imajinasi yang tinggi. Pada konsentrasi
+          Multimedia Mahasiswa akan diajarkan untuk mampu membuat hasil karya berupa Desain Grafis, Animasi, hingga
+          Audio Visual.</p> 
+
+          <p>Beragam tools akan diajarkan pada konsentrasi ini diantaranya adalah Corel Draw, Photoshop, 3D Studio Max,
+          Adobe Flash, dan aplikasi-aplikasi populer lainnya. Selain itu, Mahasiswa juga akan diajarkan untuk bisa
+          membuat Antarmuka Aplikasi, Antarmuka Website, dan lainnya.</p>
+        </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal bussines  -->
+  <div class="modal fade" id="bussines" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">Bussines Information System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-between">
+          <div class="card shadow-sm">
+            <img src="img/bussines.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="325">
+          </div>
+
+          <p class="justify-content-end mt-3 ">
+            Menjawab kebutuhan bisnis yang terus berkembang, kami di Program Studi Pendidikan Teknologi Informasi
+            membuka Konsentrasi Komputerisasi Akuntansi. Konsentrasi ini sangatlah penting dan banyak dibutuhkan saat
+            ini. Komputerisasi Akuntansi adalah sebuah pilihan yang tepat untuk mereka yang ingin menjawab tantangan dan
+            menjadikan bidang akuntansi dan keuangan sebagai karir masa depan, hal tersebut dikarenakan.
+          <ul>
+            <li>Keterampilan komputerisasi akuntansi sangat penting untuk setiap praktek bisnis.</li>
+            <li>Sistem akuntansi manual dewasa ini sudah digantikan oleh sistem komputerisasi.</li>
+            <li>Kebutuhan tenaga kerja siap terap.</li>
+            <li>Setelah menyelesaikan Program S1 PTI bidang konsentrasi Komputerisasi akuntansi, Anda bisa bekerja untuk
+              hampir setiap bisnis dalam industri apa pun.</li>
+            <li>Setelah menyelesaikan Program S1 PTI bidang konsentrasi Komputerisasi akuntansi, Anda bisa bekerja untuk
+              hampir setiap bisnis dalam industri apa pun.
+            </li>
+          </ul>
+          <p class="mt-3">Program studi Pendidkan Teknologi Informasi bidang Konsentrasi Komputerisasi Akuntansi
+            mempersiapkan lulusannya menjadi seorang professional di bidang Akuntansi dan Keuangan berbasis ICT.
+            Memberikan pengalaman belajar dunia keuangan dengan ahlinya. Lulusan akan memiliki kemampuan penguasaan
+            akuntansi maupun teknologi informasi dalam bentuk aplikasi bisnis dan akuntansi, penguasaan bahasa bisnis
+            Internasional dan soft skill yang baik.</p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL  -->
+
+
+  <!-- FOOTER  -->
+  <div class="container-fluid bg-light mb-0 justify-content-center">
+    <footer class="py-5 px-5 justify-content-center">
+      <div class="row" id="footer">
+        <div class="col-6 col-md-4 mb-3 ">
+          <h5 class="fw-bold">Our Social Media</h5>
+          <hr class="dropdown-divider mb-4">
+          <ul class="nav flex-column">
+            <li class="nav-item" id="icon"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fa-brands fa-instagram fa-2x"></i> ptiumtas</a></li>
+            <hr class="divider">
+            <li class="nav-item" id="icon"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fa-brands fa-twitter fa-2x"></i>@ptiumtas</a></li>
+            <hr class="divider">
+            <li class="nav-item " id="icon"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fa-brands fa-facebook fa-2x"></i> Pendidikan Teknologi Informasi UMTAS</a></li>
+            <hr class="divider">
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-2">
+          <form>
+            <h5 class="fw-bold">Our Contact</h5>
+            <hr class="dropdown-divider mb-4">
+            <p class="text-muted"><i class="fa-solid fa-phone"></i> (0265) 2350982</p>
+            <p class="text-muted"><i class="fa-solid fa-envelope "></i> pti@umtas.ac.id</p>
+            <p class="text-muted"><i class="fa-solid fa-location-dot"></i>  Tasikmalaya, Jawa Barat</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <!-- <input id="newsletter1" type="text" class="form-control" placeholder="Email address"> -->
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 150px"></textarea>
+            </div>
+            <button class="btn btn-primary mt-2" type="button">Kirim</button>
+          </form>
+        </div>
+      </div>
+  </div>
+
+  <div class="d-flex  flex-sm-row justify-content-center py-0 my-4 border-top mt-0">
+    <p class="mt-4">&copy; 2022 PTI Umtas, Inc. All rights reserved.</p>
+  </div>
+  </footer>
+  </div>
+  <!-- END FOOTER  -->
+</body>
+
+</html>
